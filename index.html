@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>HTML Tutorial</title>
+    <script>
+
+
+
+        function exe() {
+            var str = document.getElementById('inputBox');
+            var text = str.value;
+            if (text) {
+                alert(text);
+            } else {
+                alert("내용이 없습니다.");
+            }
+
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <input type="text" id="inputBox"></text>
+    <button id="exeBtn" onclick=exe()>실행</button>
+</body>
+
+</html>
