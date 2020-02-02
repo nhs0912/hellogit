@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<!-- <script type="text/javascript" src="test.js"></script> -->
+<script>
+function add(){
+    var x = document.getElementById('one');
+    var y = document.getElementById('two');
+    var sum = Number(x.value) + Number(y.value);
+    console.log("더하기 : "+ sum)
+};
+function minus(){
+    var x = document.getElementById('one');
+    var y = document.getElementById('two');
+    var sum = Number(x.value) - Number(y.value);
+    console.log("빼기 : "+ sum)
+    
+};
+function multiply(){
+    var x = document.getElementById('one');
+    var y = document.getElementById('two');
+    var sum = Number(x.value) * Number(y.value);
+    console.log("곱하기 : "+ sum)
+    
+};
+function division(){
+    var x = document.getElementById('one');
+    var y = document.getElementById('two');
+    var sum = Number(x.value) / Number(y.value);
+    console.log("나누기 : "+ sum)
+  
+};
+</script>
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+</head>
+<body>
+  
+   1<input type ="text" id="one">
+   <br>
+   2<input type ="text" id="two">
+   <br>
+   <input type="button" name="btn1" value="더하기" onclick="add()">
+   <input type="button" name="btn2" value="빼기" onclick="minus()">
+   <input type="button" name="btn3" value="곱하기" onclick="multiply()">
+   <input type="button" name="btn4" value="나누기" onclick="division()">
+   
+</body>
+</html>
