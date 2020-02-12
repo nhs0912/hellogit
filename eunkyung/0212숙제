@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!--script type="text/javascript" src="text.js"></script>-->
+    <script>
+function execute(){
+    var x = document.getElementById('one')
+    var y = document.getElementById('two')
+    var output=add(x,y)
+console.log("output===",output)
+};
+function execute2(){
+    var x = document.getElementById('one')
+    var y = document.getElementById('two')
+    var output=minus(x,y)
+console.log("output===",output)
+};
+function execute3(){
+    var x = document.getElementById('one')
+    var y = document.getElementById('two')
+    var output=multiply(x,y)
+console.log("output===",output)
+};
+function execute4(){
+    var x = document.getElementById('one')
+    var y = document.getElementById('two')
+    var output=division(x,y)
+console.log("output===",output)
+};
+function add(x,y){
+    var sum = Number(x.value)+Number(y.value);
+    console.log("더하기:"+sum)
+    return sum
+    };
+
+    function minus(x,y){
+       var sum=Number(x.value)-Number(y.value);
+       console.log("빼기:"+sum)
+       return sum
+    };
+    function multiply(x,y){
+        var sum=Number(x.value)*Number(y.value)
+        console.log("곱하기:"+sum)
+        return sum
+    };
+    function division(x,y){
+        var sum=Number(x.value)/Number(y.value)
+        console.log("나누기:"+sum)
+        return sum
+    };
+    </script>
+    
+    <head>
+
+    </head>
+    <body>
+     1<input type="text" id="one">
+     2<input type="text" id="two">
+     <br>
+     <input type="button"name="btn1"value="더하기"onclick="execute()">
+     <input type="button"name="btn2"value="빼기"onclick="execute2()">
+     <input type="button"name="btn3"value="곱하기"onclick="execute3()">
+     <input type="button"name="btn4"value="나누기"onclick="execute4()">
+    </body>
+</html>
