@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<script>
+function execute(){
+    var name = document.getElementById('name').value;
+    if(name == "nhs0912"){
+        console.log("중복된 아이디 입니다. 다른 아이디를 입력해 주세요");
+    }else if(name == "ekek20"){
+        console.log("중복된 아이디 입니다. 다른 아이디를 입력해 주세요");
+
+    }else{
+        console.log("중복아이디 체크 성공");
+    }
+
+};
+</script>
+<head>
+
+</head>
+<body>
+아이디:<input type="text" id="name">
+<br>
+<input type="button" name="btn1" value="실행" onclick="execute()">
+</body>
+</html>
