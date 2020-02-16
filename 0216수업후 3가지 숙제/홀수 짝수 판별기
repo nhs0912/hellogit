@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<script>
+function execute(){
+    var input = document.getElementById('num');
+    if(num.value%2==1){
+        console.log ("홀수 입니다.");
+    }else{
+    console.log ("짝수 입니다.")
+    }
+    };
+</script>
+<head>
+
+</head>
+<body>
+홀수짝수 판별기:<input type="text" id="num">
+<br>
+<input type="button" name="btn1" value="실행" onclick="execute()">
+</body>
+</html>
