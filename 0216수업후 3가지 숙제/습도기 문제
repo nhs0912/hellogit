@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang ="ko">
+<script>
+function execute(){
+var humidity = document.getElementById('humidity').value;
+if(10<=humidity&&humidity<50){
+    console.log("낮음");
+}
+if(50<=humidity&&humidity<60){
+    console.log("쾌적");
+}
+if(60<=humidity&&humidity<100){
+    console.log("높음");
+}
+};
+</script>
+<head>
+
+</head>
+<body>
+습도:<input type="text" id="humidity">
+<br>
+<input type="button" name="btn1" value="실행" onclick="execute()">
+</body>
+</html>
